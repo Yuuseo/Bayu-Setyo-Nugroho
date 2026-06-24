@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void) {
+    int n;
+    cout << "Masukkan jumlah data: ";
+    cin >> n;
+
+    int* data = new int[n];
+
+    for(int i = 0; i < n; i++) {
+        cout << "Data ke-" << i+1 << ": ";
+        cin >> data[i];
+    }
+
+    cout << "\nIsi array:\n";
+    for(int i = 0; i < n; i++) {
+        cout << data[i] << " ";
+    }
+
+    delete[] data;
+
+    return 0;
+}
